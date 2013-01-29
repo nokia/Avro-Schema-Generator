@@ -34,10 +34,10 @@ Your Maven project would include a plugin declaration similar to this:
             <outputDirectory>..\sources</outputDirectory>
             <packageName>my.generated</packageName>
             <bindingFiles>
-            <file>resources/binding1.xsd</file>
-        </bindingFiles>
-        <schemaFiles>
-            <schema>resources/schema1.xsd</schema>
+                <file>resources/binding1.xsd</file>
+            </bindingFiles>
+            <schemaFiles>
+                <schema>resources/schema1.xsd</schema>
             </schemaFiles>
         </configuration>
     </plugin>
