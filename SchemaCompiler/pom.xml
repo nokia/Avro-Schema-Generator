@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.nokia.util.avro</groupId>
+    <artifactId>schemagen</artifactId>
+	<name>Schemagen Parent</name>
+	<url>http://dchitsscm01:5000/avro-utils/summary</url>
+
+	<packaging>pom</packaging>
+	<version>0.4-SNAPSHOT</version>
+
+	<developers>
+		<developer>
+			<name>Ben Fagin</name>
+			<organization>Nokia</organization>
+			<email>ben.fagin@nokia.com</email>
+		</developer>
+	</developers>
+
+	<licenses>
+		<license>
+			<name>ASL 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+			<comments>This project is licensed under ASL 2.0.</comments>
+		</license>
+	</licenses>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<modules>
+		<module>schemagen-core</module>
+		<module>schemagen-plugin</module>
+	</modules>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.4</version>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<dependencies>
+
+		<!--test dependencies -->
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.8.1</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+    
+</project>
