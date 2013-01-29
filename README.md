@@ -4,7 +4,7 @@ very similar to the JAXB classes. The process is wrapped in a Maven plugin, whic
 or automatic execution of the process. The plugin completes in one step the generation of JAXB classes,
 Avro schemas, and Avro classes.
 
-For more information about the projet, read the writeup on InfoQ:
+For more information about the projet, read the writeup on InfoQ:  
 http://www.infoq.com/articles/AVROSchemaJAXB
 
 # How does it work?
