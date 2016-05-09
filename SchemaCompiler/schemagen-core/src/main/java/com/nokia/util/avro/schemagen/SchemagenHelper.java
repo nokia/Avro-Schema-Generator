@@ -28,6 +28,7 @@ import com.sun.xml.xsom.*;
 
 import javax.xml.datatype.XMLGregorianCalendar;
 import java.math.BigInteger;
+import java.math.BigDecimal;
 import java.util.*;
 
 /**
@@ -268,9 +269,15 @@ public class SchemagenHelper {
 			return new DateAvroType(pName);
 		}
 
+		// write arbitrary precision integers as strings
 		if (clazz.isAssignableFrom(clazz.owner().ref(BigInteger.class))) {
 			return AvroPrimitive.PrimitiveType.STRING.newInstance();
 		}
+		
+		// write arbitrary length decimals as strings
+		if (clazz.isAssignableFrom(clazz.owner().ref(BigDecimal.class))) {
+			return AvroPrimitive.PrimitiveType.STRING.newInstance();
+		}		
 
 		return null;
 	}
