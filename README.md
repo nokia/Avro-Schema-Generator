@@ -56,3 +56,8 @@ This will invoke the entire workflow on your input data. The artifacts produced 
 You can then use the Java files needed. To have the source files compiled automatically, you will want to
 either have them created in folder which is part of your Maven project's source directory, or explicitly
 add an include for the generated directory using the maven-compiler plugin.
+
+
+## License
+
+This project is licensed under the Apache-2.0 license - see the [LICENSE](https://github.com/nokia/Avro-Schema-Generator/blob/master/LICENSE.txt).
